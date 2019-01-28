@@ -1,0 +1,29 @@
+{
+  "name": "animals",
+  "version": "1.0.0",
+  "description": "Project to demostrate skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aydys/animals.git"
+  },
+  "author": "Aidys Dongak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aydys/animals/issues"
+  },
+  "homepage": "https://github.com/aydys/animals#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-normalize-scss": "^8.0.0"
+  }
+}
