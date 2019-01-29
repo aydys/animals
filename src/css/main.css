@@ -305,4 +305,68 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'PT Serif', sans-serif; }
+
+.header {
+  background: no-repeat;
+  background-size: cover; }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 100%; }
+
+.header__logo {
+  position: relative; }
+
+.header__logo-pic {
+  position: absolute;
+  top: 20px; }
+
+.header__logo-name {
+  position: absolute;
+  top: 10px;
+  left: 27px;
+  font-family: "CafFranoise", sans-serif;
+  font-size: 45px;
+  color: #f7bd00;
+  text-transform: uppercase;
+  white-space: nowrap; }
+
+.header__menu {
+  margin-right: 5px; }
+
+.header__caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 40px;
+  color: #f7bd00;
+  margin-top: 235px; }
+
+.header__title {
+  display: flex;
+  justify-content: center;
+  font-family: "CafFranoise", sans-serif;
+  font-size: 120px;
+  color: #f7bd00;
+  text-transform: uppercase;
+  margin-top: 20px; }
+
+.header__title-line {
+  position: relative;
+  margin-left: 40px; }
+  .header__title-line::after {
+    content: '';
+    width: 255px;
+    height: 10px;
+    background-color: #f7bd00;
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: -20px; }
+
 /*# sourceMappingURL=main.css.map */
