@@ -369,4 +369,59 @@ body {
     top: 65px;
     left: -20px; }
 
+.header__button {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: 3px solid #f7bd00;
+  border-radius: 10px;
+  font-family: inherit;
+  margin: auto;
+  margin-top: 35px; }
+
+.header__button-text {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #f7bd00;
+  white-space: nowrap;
+  border-right: 3px solid #f7bd00;
+  padding: 10px 20px; }
+
+.header__button-arrow {
+  padding: 16px; }
+
+.header__pagination {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #f7bd00;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 200px; }
+
+.header__pagination-left {
+  display: flex;
+  align-items: center; }
+
+.header__pagination-text {
+  margin: 0 5px; }
+
+.header__pagination-center {
+  display: flex;
+  color: #8d6c00;
+  margin: 0 35px; }
+
+.header__pagination-active {
+  color: #f7bd00; }
+
+.header__pagination-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+
+.header__arrow {
+  text-align: center;
+  margin-top: 30px; }
+
 /*# sourceMappingURL=main.css.map */
