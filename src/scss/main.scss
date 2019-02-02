@@ -525,3 +525,55 @@ body {
 .speaker__link {
     color: $bs-yellow;
 }
+
+// Contact Section
+
+.contact {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact__bg-img {
+    position: absolute;
+}
+
+.contact__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 110px 0;
+}
+
+.contact__content {
+    width: 750px;
+    line-height: 26px;
+}
+
+.contact__text {
+    margin: 0 0 26px;
+}
+
+.contact__text-color {
+    color: $bs-yellow;
+    font-size: 19px;
+    line-height: 45px;
+}
+
+// Footer 
+
+.footer {
+    background-color: #202020;
+    color: #ffffff;
+    font-size: 14px;
+
+    padding: 23px 0;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-icon {
+    margin-right: 10px;
+}
