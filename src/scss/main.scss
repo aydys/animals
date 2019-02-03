@@ -259,6 +259,34 @@ body {
     margin-top: -1px;
 }
 
+@include r(1024px) {
+    .intro {
+        height: 50vh;
+    }
+}
+
+@include r(1420) {
+    .intro__img-left {
+        width: 545px;
+        height: auto;
+    }
+
+    .intro__img-right {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@include r(1024) {
+    .intro__img-left {
+        display: none;
+    }
+
+    .intro__img-right {
+        display: none;
+    }
+}
+
 .intro__main {
     max-width: 1420px;
     position: absolute;
@@ -280,8 +308,11 @@ body {
 }
 
 @include r(1024) {
-    .intro__main {
+    .intro__main {               
         max-width: 768px;
+        max-height: 100%;
+
+        background-size: cover;
     }
 }
 
@@ -783,6 +814,13 @@ body {
 
 .contact__bg-img {
     position: absolute;
+}
+
+@include r(1024) {
+    .contact__bg-img {
+        width: 768px;
+        height: auto;
+    }
 }
 
 .contact__wrap {
