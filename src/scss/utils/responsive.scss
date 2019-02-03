@@ -1,0 +1,43 @@
+@mixin r( $point ) {
+	@if $point==240 {
+		@media ( max-width: 240px ) {
+			@content;
+		}
+	}
+	@if $point==320 {
+		@media ( max-width: 320px ) {
+			@content;
+		}
+	}
+	@if $point==480 {
+		@media ( max-width: 480px ) {
+			@content;
+		}
+	}
+	@if $point==600 {
+		@media ( max-width: 600px ) {
+			@content;
+		}
+	}
+	@if $point==768 {
+		@media ( max-width: 768px ) {
+			@content;
+		}
+	}
+	
+	@if $point==1140 {
+		@media ( max-width: 1140px ) {
+			@content;
+		}
+	}
+	@if $point==1024 {
+		@media ( max-width: 1024px ) {
+			@content;
+		}
+	}
+	@if $point==1420 {
+		@media ( max-width: 1420px ) {
+			@content;
+		}
+	}
+}
