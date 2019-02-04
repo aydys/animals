@@ -24,7 +24,7 @@ body {
 
 @include r(1024) {
     .wrap {
-        width: 740px;
+        width: 720px;        
     }
 }
 
@@ -72,8 +72,23 @@ body {
     white-space: nowrap;
 }
 
+@include r(1024) {
+    .header__logo-name {
+        font-size: 25px;
+        top: 15px;
+        left: 18px;
+    }
+}
+
 .header__menu {
     margin-right: 5px;
+}
+
+@include r(1024) {
+    .header__menu-icon {
+        width: 30px;
+        height: auto;
+    }
 }
 
 .header__caption {
@@ -261,7 +276,7 @@ body {
 
 @include r(1024px) {
     .intro {
-        height: 50vh;
+        min-height: 500px;
     }
 }
 
@@ -311,6 +326,7 @@ body {
     .intro__main {               
         max-width: 768px;
         max-height: 100%;
+        min-height: 450px;
 
         background-size: cover;
     }
@@ -337,7 +353,8 @@ body {
 
 @include r(1024) {
     .intro__main-wrap {
-        width: 720px;
+        width: 750px;
+        padding: 9px;
     }
 }
 
@@ -357,6 +374,15 @@ body {
     }
 }
 
+@include r(1024) {
+    .intro__main-box {
+        width: 340px;
+        margin: 100px 0;  
+        background-color: $bs-yellow;
+        
+    }
+}
+
 .intro__main-inner {
     padding: 90px 40px;
 }
@@ -364,6 +390,13 @@ body {
 @include r(1420) {
     .intro__main-inner {
         padding: 45px 30px;
+    }
+
+}
+
+@include r(1024) {
+    .intro__main-inner {
+        padding: 35px 20px;
     }
 
 }
@@ -486,15 +519,14 @@ body {
     background-color: #202020;
 }
 
-@include r(1024) {
-    .event__img-left {
-        width: 210px;
-        height: 375px;
-    }
+.event__img-right {
+    align-self: flex-end;    
 }
 
-.event__img-right {
-    align-self: flex-end;
+@include r(1024) {
+    .event__img-right {
+        align-self: center;
+    }
 }
 
 .event__wrap {
@@ -547,7 +579,7 @@ body {
 
 @include r(1420) {
     .event__content { 
-        width: 560px;
+        width: 650px;
     }
 }
 
@@ -722,6 +754,7 @@ body {
 
 @include r(1024) {
     .speaker__content {
+        width: 650px;
         margin-top: 10px;
     }
 }
@@ -816,12 +849,12 @@ body {
     position: absolute;
 }
 
-@include r(1024) {
-    .contact__bg-img {
-        width: 768px;
-        height: auto;
-    }
-}
+// @include r(1024) {
+//     .contact__bg-img {
+//         width: 768px;
+//         height: auto;
+//     }
+// }
 
 .contact__wrap {
     display: flex;
@@ -833,6 +866,7 @@ body {
 @include r(1024) {
     .contact__wrap {
         display: block;
+        padding: 20px;
     }
 }
 
@@ -843,6 +877,7 @@ body {
 
 @include r(1024) {
     .contact__content {
+        width: 650px;
         margin-top: 10px;
     }
 }
