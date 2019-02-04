@@ -28,6 +28,18 @@ body {
     }
 }
 
+@include r(768) {
+    .wrap {
+        width: 390px;
+    }
+}
+
+@include r(480) {
+    .wrap {
+        width: 300px;
+    }
+}
+
 // Header
 
 .header {
@@ -43,12 +55,22 @@ body {
     }
 }
 
+@include r(768) {
+    .header {
+        background-position: 25%;    
+    }
+}
 .header__top {
     display: flex;
     justify-content: space-between;
 
-    padding: 40px;
-      
+    padding: 40px;      
+}
+
+@include r(480) {
+    .header__top {
+        padding: 20px;
+    }    
 }
 
 .header__logo {
@@ -80,6 +102,18 @@ body {
     }
 }
 
+@include r(480) {
+    .header__logo-pic {        
+        top: 0;
+        left: 0; 
+    }
+
+    .header__logo-name {        
+        top: -5px;
+        left: 20px;
+    }
+}
+
 .header__menu {
     margin-right: 5px;
 }
@@ -108,6 +142,13 @@ body {
     }    
 }
 
+@include r(768) {
+    .header__caption {
+        font-size: 25px;
+        margin-top: 120px;
+    }  
+}
+
 .header__title {
     display: flex;
     justify-content: center;    
@@ -126,6 +167,11 @@ body {
     }
 }
 
+@include r(1024) {
+    .header__title {
+       font-size: 80px;
+    }
+}
 .header__title-line {
     position: relative;
 
@@ -143,11 +189,11 @@ body {
 }
 
 @include r(1420) {
-    .header__title-line {       
-    &::after {
+    .header__title-line {
+        &::after {
             content: '';
-            width: 220px;
-            height: 8px;
+            width: 210px;
+            height: 10px;
             background-color: $bs-yellow;        
             display: block;
             position: absolute;
@@ -157,6 +203,35 @@ body {
     }
 }
 
+@include r(1024) {
+    .header__title-line {       
+    &::after {
+            content: '';
+            width: 170px;
+            height: 8px;
+            background-color: $bs-yellow;        
+            display: block;
+            position: absolute;
+            top: 45px;
+            left: -20px;        
+        }
+    }
+}
+
+@include r(768) {
+    .header__title-line {       
+    &::after {
+            content: '';
+            width: 170px;
+            height: 8px;
+            background-color: $bs-yellow;        
+            display: block;
+            position: absolute;
+            top: 45px;
+            left: -20px;        
+        }
+    }
+}
 .header__button {
     display: flex;    
     justify-content: center;
@@ -197,7 +272,16 @@ body {
         padding: 8px 15px;
     }
 }
- 
+
+@include r(1420) {
+    .header__button-text {
+        font-size: 16px;            
+    
+        border-right: 2px solid $bs-yellow;
+        padding: 6px 10px;
+    }
+}
+
 .header__button-arrow {
     padding: 16px;    
 }
@@ -205,6 +289,12 @@ body {
 @include r(1420) {
     .header__button-arrow {
     padding: 12px 14px;    
+    }    
+}
+
+@include r(768) {
+    .header__button-arrow {
+    padding: 6px 8px;    
     }    
 }
 
@@ -332,6 +422,22 @@ body {
     }
 }
 
+@include r(768) {
+    .intro__main {               
+        max-width: 480px;
+        max-height: 100%;
+        min-height: 450px;
+
+        background-size: cover;
+    }
+}
+
+@include r(480) {
+    .intro__main {               
+        max-width: 320px;        
+    }
+}
+
 .intro__main-wrap {
     width: 1140px;
     height: 100%;
@@ -358,6 +464,19 @@ body {
     }
 }
 
+@include r(768) {
+    .intro__main-wrap {
+        width: 480px;
+        padding: 0;
+        justify-content: center;       
+    }
+}
+
+@include r(768) {
+    .intro__main-wrap {
+        width: 320px;              
+    }
+}
 .intro__main-box {
     width: 560px;
     margin: 250px 0;   
@@ -455,7 +574,7 @@ body {
     margin: 30px 0 0;
 }
 
-// Module Button
+// Component Button
 
 .button {
     display: flex;
@@ -500,13 +619,39 @@ body {
     }
 }
 
-//End Module
+@include r(480) {
+    .button {        
+        border: 1px solid #000000;
+    }
+
+    .button__text {
+        font-size: 16px;        
+        border-right: 1px solid;
+        margin: -1px 0;
+
+        padding: 5px 10px;
+    }
+
+    .button__arrow {
+        fill: #000000;
+
+        padding: 4px 5px 4px 8px;
+    }
+}
+
+//End Component
 
 // Event Section
 
 .event {
     position: relative;
     height: 1200px;         
+}
+
+@include r(768) {
+    .event {
+        height: auto;
+    }    
 }
 
 .event__bg {
@@ -517,6 +662,14 @@ body {
     justify-content: space-between;
     z-index: -1; 
     background-color: #202020;
+}
+
+@include r(480) {
+    .event__bg {            
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;        
+    }
 }
 
 .event__img-right {
@@ -549,7 +702,7 @@ body {
     }
 }
 
-// Module Caption 
+// Component Caption 
 
 .caption {
     font-size: 36px;
@@ -565,16 +718,16 @@ body {
     }
 }
 
-//End Module
+@include r(480) {
+    .caption {
+        font-size: 26px;        
+    }
+}
+
+//End Component
 
 .event__content { 
    width: 740px;
-}
-
-@include r(1024) {
-    .event__content {
-        margin-top: 10px;
-    }
 }
 
 @include r(1420) {
@@ -583,6 +736,23 @@ body {
     }
 }
 
+@include r(1024) {
+    .event__content {
+        margin-top: 10px;
+    }
+}
+
+@include r(768) {
+    .event__content {
+        width: 390px;
+    }
+}
+
+@include r(480) {
+    .event__content {
+        width: 300px;
+    }
+}
 
 .event__text {
     margin: 0 0 40px;
@@ -602,6 +772,13 @@ body {
     margin-right: 25px;
 }
 
+@include r(480) {
+    .event__date {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
 .event__time {
     font-size: 19px;
 }
@@ -612,6 +789,12 @@ body {
     margin: 30px 0 0;
 }
 
+@include r(480) {
+    .event__list {
+        font-size: 16px;
+    }    
+}
+
 .event__item {   
     line-height: 30px;
 
@@ -620,7 +803,19 @@ body {
     &:last-child {
         margin-bottom: 0;
     }
-} 
+}
+
+@include r(480) {
+    .event__item {   
+    line-height: 26px;
+
+    margin: 0 0 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+}
 
 .event__item-inner {
     margin-left: 10px;
@@ -642,6 +837,21 @@ body {
     }
 }
 
+@include r(768) {
+    .event__form-wrap {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        width: 390px;
+    }
+}
+
+@include r(480) {
+    .event__form-wrap {        
+        width: 320px;
+    }
+}
+
 .event__form {
     padding: 70px 45px;
 }
@@ -652,6 +862,11 @@ body {
     }
 }
 
+@include r(480) {
+    .event__form {
+        padding: 20px 10px;        
+    }
+}
 .event__form-title {
     text-align: center;
     color: #010100;
@@ -660,6 +875,12 @@ body {
     font-weight: 700;
 
     margin: 0 0 30px;
+}
+
+@include r(480) {
+    .event__form-title {
+        font-size: 26px;
+    }
 }
 
 .event__form-inner {
@@ -683,12 +904,28 @@ body {
     }
 }
 
+@include r(480) {
+    .event__form-cell {
+        width: 280px;
+        margin-bottom: 10px;        
+    }
+}
 .event__cell-name {
     font-size: 19px;
     font-weight: 700;
     color: #010100;
 
     margin-bottom: 15px;
+}
+
+@include r(480) {
+    .event__cell-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #010100;
+
+        margin-bottom: 15px;
+    }
 }
 
 .event__cell-input {
@@ -716,6 +953,24 @@ body {
     padding-left: 20px;
 }
 
+@include r(480) {
+        .event__cell-input {
+        height: 30px;
+        border: 1px solid #000000;       
+        padding-left: 0;
+            &:placeholder-shown {
+                padding: 0;
+                padding-left: 10px;                       
+            }
+    }
+
+    .event__cell-select {
+        height: 30px;   
+
+        padding-left: 10px;
+    }
+}
+
 .event__form-btn {
     margin: 0 auto;
 }
@@ -728,6 +983,12 @@ body {
 
 .speaker__wrap {
     margin-top: 210px;
+}
+
+@include r(768) {
+    .speaker__wrap {
+        margin-top: 0;
+    }    
 }
 
 .speaker__inner {
@@ -759,6 +1020,17 @@ body {
     }
 }
 
+@include r(768) {
+    .speaker__content {
+        width: 390px;
+    }
+}
+
+@include r(768) {
+    .speaker__content {
+        width: 300px;
+    }
+}
 .speaker__text {
     line-height: 26px;
 
@@ -788,6 +1060,13 @@ body {
         background-color: $bs-yellow;
 
         margin: 20px 10px 0;    
+    }
+}
+
+@include r(480) {
+    .speaker__pic {
+        width: 300px;
+        height: auto;
     }
 }
 
@@ -827,11 +1106,25 @@ body {
 }
 
 .speaker__lead {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333333;
-    
-    margin: 40px 0 110px;
+        font-size: 36px;
+        font-weight: 700;
+        color: #333333;
+        
+        margin: 40px 0 110px;
+    }
+
+@include r(768) {
+    .speaker__lead {
+        font-size: 24px;
+        margin: 30px 0;        
+    }
+}
+
+@include r(480) {
+    .speaker__lead {
+        font-size: 22px;
+        margin: 30px 0;        
+    }
 }
 
 .speaker__link {
@@ -849,13 +1142,19 @@ body {
     position: absolute;
 }
 
-// @include r(1024) {
-//     .contact__bg-img {
-//         width: 768px;
-//         height: auto;
-//     }
-// }
+@include r(768) {
+    .contact__bg-img img {
+        width: 480px;
+        height: auto;
+    }
+}
 
+@include r(480) {
+    .contact__bg-img img {
+        width: 320px;
+        height: auto;
+    }
+}
 .contact__wrap {
     display: flex;
     justify-content: space-between;
@@ -867,6 +1166,12 @@ body {
     .contact__wrap {
         display: block;
         padding: 20px;
+    }
+}
+
+@include r(480) {
+    .contact__wrap {    
+        padding: 20px 0;
     }
 }
 
@@ -882,6 +1187,18 @@ body {
     }
 }
 
+@include r(768) {
+    .contact__content {
+        width: 390px;        
+    }
+}
+
+@include r(480) {
+    .contact__content {
+        width: 300px;        
+    }
+}
+
 .contact__text {
     margin: 0 0 26px;
 }
@@ -890,6 +1207,15 @@ body {
     color: $bs-yellow;
     font-size: 19px;
     line-height: 45px;
+}
+
+@include r(480) {
+    .contact__text-color {
+        color: $bs-yellow;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
 }
 
 // Footer 
@@ -907,9 +1233,21 @@ body {
     justify-content: space-between;    
 }
 
+@include r(480) {
+    .footer__wrap {
+        display: block;      
+    }    
+}
+
 .footer__social {
     width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@include r(480) {
+    .footer__social {
+        margin-top: 10px;
+    }
 }
