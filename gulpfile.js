@@ -4,7 +4,8 @@ var gulp         = require('gulp'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),  
     browserSync  = require('browser-sync').create(),    
-    notify       = require('gulp-notify');
+    notify       = require('gulp-notify'),
+    cssbeautify = require('gulp-cssbeautify');    
 
 
 // Static Server + watching scss/html files
@@ -26,6 +27,7 @@ gulp.task('sass', function() {
             includePaths: require('node-normalize-scss').includePaths
         }))
         .pipe(postcss([ autoprefixer() ]))
+        .pipe(cssbeautify())
         .pipe(sourcemaps.write('.'))
         .on("error", notify.onError())
         .pipe(gulp.dest("src/css"))
