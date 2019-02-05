@@ -273,7 +273,7 @@ body {
     }
 }
 
-@include r(1420) {
+@include r(1024) {
     .header__button-text {
         font-size: 16px;            
     
@@ -877,6 +877,12 @@ body {
     margin: 0 0 30px;
 }
 
+@include r(768) {
+    .event__form-title {
+        font-size: 30px;
+    }
+}
+
 @include r(480) {
     .event__form-title {
         font-size: 26px;
@@ -901,6 +907,13 @@ body {
 @include r(1420) {
     .event__form-cell {
         width: 300px;        
+    }
+}
+
+@include r(480) {
+    .event__form-cell {
+        width: 320px;
+        margin-bottom: 5px;        
     }
 }
 
@@ -951,6 +964,24 @@ body {
     height: 45px;   
 
     padding-left: 20px;
+}
+
+@include r(768) {
+        .event__cell-input {
+        height: 35px;
+        border: 2px solid #000000;       
+        padding-left: 0;
+            &:placeholder-shown {
+                padding: 0;
+                padding-left: 10px;                       
+            }
+    }
+
+    .event__cell-select {
+        height: 35px;   
+
+        padding-left: 5px;
+    }
 }
 
 @include r(480) {
