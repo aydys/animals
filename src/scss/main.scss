@@ -43,10 +43,31 @@ body {
 // Header
 
 .header {
-    background: no-repeat ;
+    position: relative;       
+    height: 100%;
+    background-image: url('../img/headerbg768.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-color: #101010;   
-    height: 100%;   
+    background-color: #101010; 
+}
+
+@media (min-width: 1420px) {
+    .header {        
+        background-image: url('../img/headerbg.png');    
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1419.98px) {
+    .header {        
+        background-image: url('../img/headerbg1420.png');    
+    }
+}
+
+@media (min-width: 768.02px) and (max-width: 1023.98px) {
+    .header {        
+        background-image: url('../img/headerbg1024.png');    
+    }
 }
 
 @include r(1420) {
@@ -60,6 +81,15 @@ body {
         background-position: 25%;    
     }
 }
+
+// .header__bg {
+//     position: absolute;
+//     z-index: -1;
+//     background-color: #101010;
+//     width: 100%;
+//     height: 100%;
+// }
+
 .header__top {
     display: flex;
     justify-content: space-between;
@@ -292,6 +322,12 @@ body {
     }    
 }
 
+@include r(1024) {
+    .header__button-arrow {
+    padding: 8px 10px 3px;    
+    }    
+}
+
 @include r(768) {
     .header__button-arrow {
     padding: 6px 8px;    
@@ -400,8 +436,20 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;    
         
-    background-image: url('../img/martin-arusalu.png');
+    background-image: url('../img/martin-arusalu480.png');
     background-repeat: no-repeat;          
+}
+
+@media (min-width: 1024px) {
+    .intro__main {        
+        background-image: url('../img/martin-arusalu.png');    
+    }
+}
+
+@media (min-width: 768.02px) and (max-width: 1023.98px) {
+    .intro__main {        
+        background-image: url('../img/martin-arusalu1024.png');    
+    }
 }
 
 @include r(1420) {
@@ -1115,12 +1163,21 @@ body {
     transform: translate(-50%);
 }
 
+@include r(480) {
+    .speaker__pic-inner {        
+        top: 65%;    
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
 .speaker__pic-desc {
     width: 236px;
     color: white;
 
     margin-top: 15px;
 }
+
 
 .speaker__name {
     font-size: 19px;
@@ -1130,10 +1187,22 @@ body {
     padding-top: 30px;    
 }
 
+@include r(480) {
+    .speaker__name {   
+    padding-top: 15px;    
+}
+}
+
 .speaker__desc {
     text-align: center;
 
     padding: 10px 0 30px;
+}
+
+@include r(480) {
+    .speaker__desc {  
+        padding: 10px 0 15px;
+    }
 }
 
 .speaker__lead {

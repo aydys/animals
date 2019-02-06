@@ -377,10 +377,30 @@ body {
 }
 
 .header {
-    background: no-repeat;
+    position: relative;
+    height: 100%;
+    background-image: url("../img/headerbg768.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: #101010;
-    height: 100%;
+}
+
+@media (min-width: 1420px) {
+    .header {
+        background-image: url("../img/headerbg.png");
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1419.98px) {
+    .header {
+        background-image: url("../img/headerbg1420.png");
+    }
+}
+
+@media (min-width: 768.02px) and (max-width: 1023.98px) {
+    .header {
+        background-image: url("../img/headerbg1024.png");
+    }
 }
 
 @media (max-width: 1420px) {
@@ -612,6 +632,12 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    .header__button-arrow {
+        padding: 8px 10px 3px;
+    }
+}
+
 @media (max-width: 767.98px) {
     .header__button-arrow {
         padding: 6px 8px;
@@ -713,8 +739,20 @@ body {
     transform: translate(-50%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-image: url("../img/martin-arusalu.png");
+    background-image: url("../img/martin-arusalu480.png");
     background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+    .intro__main {
+        background-image: url("../img/martin-arusalu.png");
+    }
+}
+
+@media (min-width: 768.02px) and (max-width: 1023.98px) {
+    .intro__main {
+        background-image: url("../img/martin-arusalu1024.png");
+    }
 }
 
 @media (max-width: 1420px) {
@@ -1400,6 +1438,15 @@ body {
     transform: translate(-50%);
 }
 
+@media (max-width: 479.98px) {
+    .speaker__pic-inner {
+        top: 65%;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+}
+
 .speaker__pic-desc {
     width: 236px;
     color: white;
@@ -1413,9 +1460,21 @@ body {
     padding-top: 30px;
 }
 
+@media (max-width: 479.98px) {
+    .speaker__name {
+        padding-top: 15px;
+    }
+}
+
 .speaker__desc {
     text-align: center;
     padding: 10px 0 30px;
+}
+
+@media (max-width: 479.98px) {
+    .speaker__desc {
+        padding: 10px 0 15px;
+    }
 }
 
 .speaker__lead {

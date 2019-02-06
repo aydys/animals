@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header" style="background-image: url('img/headerbg.png')">
+    <header class="header">        
         <div class="header__top">
             <div class="header__logo">
                 <picture>
@@ -52,8 +52,14 @@
         </div>
     </header>
     <section class="intro">
-        <img src="img/cat.png" width="818" alt="cat" class="intro__img-left">
-        <img src="img/elephant.png" width="550" alt="elephant" class="intro__img-right">
+        <picture class="intro__img-left">
+            <source media="(min-width:1024.02px)" srcset="img/cat.png">
+            <img src="img/cat480.png" alt="cat">
+        </picture>
+        <picture class="intro__img-right">
+            <source media="(min-width:1024.02px)" srcset="img/elephant.png">
+            <img src="img/elephant480.png" alt="elephant">
+        </picture>        
         <div class="intro__main">
             <div class="intro__main-wrap">
                 <div class="intro__main-box">
