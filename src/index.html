@@ -9,7 +9,20 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">        
+    <header class="header">
+
+        <!-- Navigation -->
+        <nav id="overlay">
+            <img src="img/close.svg" width="25" alt="close" class="close-btn" id="close-menu">
+            <ul class="navigation">
+                <li><a class="nav__item-link" href="#">Home</a></li>
+                <li><a class="nav__item-link" href="#event">Event and Shedule</a></li>
+                <li><a class="nav__item-link" href="#speakers">Speakers</a></li>
+                <li><a class="nav__item-link" href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- End Navigation -->
+                
         <div class="header__top">
             <div class="header__logo">
                 <picture>
@@ -81,6 +94,7 @@
         </div>        
     </section>
     <section class="event">
+        <a name="event"></a>
         <div class="event__bg">
             <picture>
                 <source media="(max-width:1024px)" srcset="img/monkey1024.png">
@@ -158,6 +172,7 @@
         </div>
     </section>
     <section class="speaker">
+        <a name="speakers"></a>
         <div class="speaker__wrap wrap">
             <div class="speaker__inner">
                 <div class="speaker__title caption">Speakers</div>
@@ -205,6 +220,7 @@
         </div>       
     </section>
     <section class="contact">
+        <a name="contacts"></a>
         <picture class="contact__bg-img">
             <source media="(max-width:1024px)" srcset="img/contact1024.png">
             <img src="img/contact.png" alt="contact">
