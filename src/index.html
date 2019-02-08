@@ -15,10 +15,10 @@
         <nav id="overlay">
             <img src="img/close.svg" width="25" alt="close" class="close-btn" id="close-menu">
             <ul class="navigation">
-                <li><a class="nav__item-link" href="#">Home</a></li>
-                <li><a class="nav__item-link" href="#event">Event and Shedule</a></li>
-                <li><a class="nav__item-link" href="#speakers">Speakers</a></li>
-                <li><a class="nav__item-link" href="#contacts">Contact</a></li>
+                <li><a class="nav__item-link" id="anchor" href="#">Home</a></li>
+                <li><a class="nav__item-link" id="anchor" href="#event">Event and Shedule</a></li>
+                <li><a class="nav__item-link" id="anchor" href="#speakers">Speakers</a></li>
+                <li><a class="nav__item-link" id="anchor" href="#contacts">Contact</a></li>
             </ul>
         </nav>
         <!-- End Navigation -->
@@ -31,7 +31,7 @@
                 </picture>                
                 <div class="header__logo-name">wild animal</div>
             </div>
-            <div class="header__menu">
+            <div class="header__menu" id="open-menu">
                 <img src="img/burger.svg" width="43" alt="burger" class="header__menu-icon">
             </div>
         </div>
@@ -186,7 +186,7 @@
                     <div class="speaker__pic-wrap">
                         <img src="img/speaker1.png" alt="speaker1" class="speaker__pic">
                         <div class="speaker__pic-inner">
-                            <img src="img/play_icon.svg" alt="play_icon" class="speaker__icon">
+                            <img src="img/play_icon.svg" alt="play_icon" width="55" class="speaker__icon">
                             <div class="speaker__pic-desc">Watch Interview about this event</div>
                         </div>                       
                     </div>
@@ -197,7 +197,7 @@
                     <div class="speaker__pic-wrap">
                         <img src="img/speaker2.png" alt="speaker2" class="speaker__pic">
                         <div class="speaker__pic-inner">
-                            <img src="img/play_icon.svg" alt="play_icon" class="speaker__icon">
+                            <img src="img/play_icon.svg" alt="play_icon" width="55" class="speaker__icon">
                             <div class="speaker__pic-desc">Watch Interview about this event</div>
                         </div>                        
                     </div>
@@ -208,7 +208,7 @@
                     <div class="speaker__pic-wrap">
                         <img src="img/speaker3.png" alt="speaker3" class="speaker__pic">
                         <div class="speaker__pic-inner">
-                            <img src="img/play_icon.svg" alt="play_icon" class="speaker__icon">
+                            <img src="img/play_icon.svg" alt="play_icon" width="55" class="speaker__icon">
                             <div class="speaker__pic-desc">Watch Interview about this event</div>
                         </div>                        
                     </div>
@@ -247,5 +247,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

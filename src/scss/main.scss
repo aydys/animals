@@ -4,6 +4,9 @@
 @import "utils/responsive.scss";
 @import 'utils/nav.scss';
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     max-width: 1920px;

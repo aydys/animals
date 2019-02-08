@@ -347,6 +347,7 @@ nav {
     width: calc(100% - 4em);
     height: calc(60vh - 4em);
     z-index: 10;
+    display: none;
 }
 
 .close-btn {
@@ -374,6 +375,14 @@ nav {
 
 .nav__item-link:hover {
     color: grey;
+}
+
+.show-menu {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
